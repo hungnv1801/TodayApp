@@ -51,7 +51,7 @@ extension ReminderDetailViewController {
     static let reminderDetailCellIdentifier = "ReminderDetailCell"
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("Reminder Count: \(ReminderRow.allCases.count)")
+        print("Today app pro")
         return ReminderRow.allCases.count
     }
     

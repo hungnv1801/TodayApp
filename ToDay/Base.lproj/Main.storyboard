@@ -45,8 +45,16 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cdm-xV-I08">
+                                            <rect key="frame" x="319.5" y="34" width="51" height="31"/>
+                                            <connections>
+                                                <action selector="testSwitchTriggered:" destination="QcF-NO-1k8" eventType="valueChanged" id="QeT-vu-GHi"/>
+                                            </connections>
+                                        </switch>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Cdm-xV-I08" secondAttribute="trailing" constant="16" id="4dI-W8-EA6"/>
+                                        <constraint firstItem="Cdm-xV-I08" firstAttribute="centerY" secondItem="M6k-bz-eHq" secondAttribute="centerY" id="5Rg-Ps-Bde"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AVi-rx-STf" secondAttribute="trailing" constant="20" symbolic="YES" id="8rP-BP-Sym"/>
                                         <constraint firstItem="Gz6-C4-kc4" firstAttribute="top" secondItem="M6k-bz-eHq" secondAttribute="top" constant="20" symbolic="YES" id="AHk-4K-XlE"/>
                                         <constraint firstItem="Gz6-C4-kc4" firstAttribute="leading" secondItem="wPY-Id-lac" secondAttribute="trailing" constant="8" symbolic="YES" id="CQL-L4-EJE"/>
@@ -61,6 +69,7 @@
                                 <connections>
                                     <outlet property="dateLabel" destination="AVi-rx-STf" id="c7b-gE-eFl"/>
                                     <outlet property="doneButton" destination="wPY-Id-lac" id="KFe-jr-VdM"/>
+                                    <outlet property="testSwitch" destination="Cdm-xV-I08" id="MDp-6e-5XU"/>
                                     <outlet property="titleLabel" destination="Gz6-C4-kc4" id="N8X-mB-LcU"/>
                                     <segue destination="hmy-km-V6Z" kind="show" identifier="ShowReminderDetailSegue" id="bis-1J-awZ"/>
                                 </connections>

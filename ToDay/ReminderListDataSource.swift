@@ -9,6 +9,14 @@ import UIKit
 
 class ReminderListDataSource: NSObject {
     private lazy var dateFormatter = RelativeDateTimeFormatter()
+    
+    func update(_ reminder: Reminder, at row: Int) {
+            Reminder.testData[row] = reminder
+    }
+    
+    func reminder(at row: Int) -> Reminder {
+        return Reminder.testData[row]
+    }
 }
 
 extension ReminderListDataSource: UITableViewDataSource {
@@ -24,8 +32,6 @@ extension ReminderListDataSource: UITableViewDataSource {
             fatalError("Unable to dequeue ReminderCell")
         }
         let reminder = Reminder.testData[indexPath.row]
-        let image = reminder.isComplete ? UIImage(systemName: "circle.fill") : UIImage(systemName: "circle")
-        let dateText = dateFormatter.localizedString(for: reminder.dueDate, relativeTo: Date())
         // Thay vì set giá trị cho từng label, button... như này thì dùng hàm, truyền các giá trị đó vào hàm để cell nó tự xử
         cell.configure(title: reminder.title, dateText: reminder.dueDate.description, isDone: reminder.isComplete, doneButtonAction: {
             Reminder.testData[indexPath.row].isComplete.toggle()

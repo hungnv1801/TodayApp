@@ -117,15 +117,14 @@
 		0E08999726D4A33C0064B2A8 /* ToDay */ = {
 			isa = PBXGroup;
 			children = (
+				0E640A3B26F242A7002E245A /* ViewControllers */,
 				0E9341A026DDE61500B0EDBD /* Views */,
 				0E08999826D4A33C0064B2A8 /* AppDelegate.swift */,
 				0E08999A26D4A33C0064B2A8 /* SceneDelegate.swift */,
 				0E0899C826D4A5230064B2A8 /* Reminder.swift */,
 				0E08999E26D4A33C0064B2A8 /* Main.storyboard */,
-				0E08999C26D4A33C0064B2A8 /* ReminderListViewController.swift */,
-				0E0899CE26D5F4C30064B2A8 /* ReminderDetailViewController.swift */,
-				0E337ACB26D9DF7F0057A015 /* ReminderDetailViewDataSource.swift */,
 				0E337AC926D891BB0057A015 /* ReminderListDataSource.swift */,
+				0E337ACB26D9DF7F0057A015 /* ReminderDetailViewDataSource.swift */,
 				0E9341A726DE067900B0EDBD /* ReminderDetailEditDataSource.swift */,
 				0E0899A126D4A3400064B2A8 /* Assets.xcassets */,
 				0E0899A326D4A3400064B2A8 /* LaunchScreen.storyboard */,
@@ -150,6 +149,15 @@
 				0E0899BC26D4A3400064B2A8 /* Info.plist */,
 			);
 			path = ToDayUITests;
+			sourceTree = "<group>";
+		};
+		0E640A3B26F242A7002E245A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0E0899CE26D5F4C30064B2A8 /* ReminderDetailViewController.swift */,
+				0E08999C26D4A33C0064B2A8 /* ReminderListViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		0E9341A026DDE61500B0EDBD /* Views */ = {
